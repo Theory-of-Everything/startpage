@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="src/favicon.ico">
+    <title>~/startpage/</title>
+</head>
+
+<body>
+    <div>
+        <div id="main">
+            <div id="title">
+                <h1>~/startpage/<blink>_</blink></h1>
+		
+                <div id="weather"></div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script>
+                
+                const Url ='https://wttr.in/Longmont?format=%C+%t+\|+Wind:+%w+\|+Precipitation:+%p+\|+Time+%T'
+                    $.get(Url, function(data,status){
+                        let area = document.getElementById("weather");
+                        area.innerHTML=data
+
+                    });
+                
+                </script>
+            </div>
+
+            <div id="links">
+                <ul>
+                    <p id="listhead">Resources
+                        <li><a href="https://wiki.archlinux.org">Arch Wiki</a></li>
+                        <li><a href="https://wiki.artixlinux.org">Artix Wiki</a></li>
+                        <li><a href="https://wiki.gentoo.org">Gentoo Wiki</a></li>
+                        <li><a href="https://www.linuxfromscratch.org/">LFS</a></li>
+                        <li><a href="https://aur.archlinux.org">AUR</a></li>
+                    </p>
+                </ul>
+                <ul>
+                    <p id="listhead">Cloud Services
+                        <li><a href="https://old.protonmail.com">Mail</a></li>
+                        <li><a href="https://gmail.com">Stinky Gmail</a></li>
+                        <li><a href="https://manager.cozycloud.cc/cozy/login?lang=en">Cozy Cloud</a></li>
+                    </p>
+                </ul>
+                <ul>
+                    <p id="listhead">Social
+                        <li><a href="https://koyu.space">Mastadon</a></li>
+                        <li><a href="https://reddit.com/r/unixporn">*nix Boards</a></li>
+                        <li><a href="https://discord.com">Discord</a></li>
+                        <li><a href="https://kiwiirc.com/nextclient/">IRC</a></li>
+                    </p>
+                </ul>
+                <ul>
+                    <p id="listhead">Server
+                        <li><a href="https://my.vultr.com">Vultr</a></li>
+                        <li><a href="https://namecheap.com">Namecheap</a></li>
+                    </p>
+                </ul>
+                <ul>
+                    <p id="listhead">Code
+                        <li><a href="https://github.com">GitHub</a></li>
+                        <li><a href="https://stackoverflow.com">Stackoverflow</a></li>
+                    </p>
+                </ul>
+            </div>
+	    <div id="links">
+                <ul>
+                    <p id="listhead">File Share
+                        <li><a href="https://nyaa.si">Nyaa</a></li>
+                        <li><a href="https://send.vis.ee/">Send.vis.ee</a></li>
+                    </p>
+                </ul>
+                <ul>
+                    <p id="listhead">Other
+                        <li><a href="https://theoryware.net">Website</a></li>
+                        <li><a href="https://youtube.com">Youtube</a></li>
+                        <li><a href="https://based.cooking">Based Cooking</a></li>
+                        <li><a href="https://landchad.net">Landchad</a></li>
+                        <li><a href="https://techgaun.github.io/active-forks/index.html">Active Forks</a></li>
+                    </p>
+                </ul>
+		<ul>
+		    <p id="listhead">Comics
+		        <li><a href="http://nedroid.com/">Nedroid</a></li>
+			<li><a href="https://xkcd.com/">xkcd</a></li>
+		    </p>
+		</ul>
+	    </div>
+        </div>
+    </div>
+</body>
+
+</html>

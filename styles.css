@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Agave';
+    src: url('src/fonts/Agave-Regular.woff2') format('woff2'), url('resrc/fonts/Agave-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agave';
+    src: url('src/fonts/Agave-Bold.woff2') format('woff2'), url('resrc/fonts/Agave-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: #454a4d #202324;
+}
+
+html {
+    margin: 0;
+    background-color: #151515;
+    color: white;
+    font-family: Agave;
+    background-image: url("src/img/bg.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+blink {
+	animation: blinker 2s ease infinite;
+}
+
+div {
+    display: block;
+}
+
+#main {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 50px 200px 0 200px;
+    padding: 100px 100px 100px 100px;
+
+}
+
+#title {
+    background-image: linear-gradient(45deg, #ce3c65, #68c768);
+    text-align: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* #title {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 200px 500px 0 500px;
+} */
+
+#listhead {
+    background-image: linear-gradient(45deg, #ce3c65, #68c768);
+    text-align: center;
+    font-size: 16pt;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#links ul {
+}
+
+#links li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #68c768;
+    margin: 0px 5px 0px 5px;
+}
+
+a:hover {
+    color: #ce3c65;
+}
+
+#thumb {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+h1 {
+}
